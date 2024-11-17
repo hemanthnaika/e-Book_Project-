@@ -1,0 +1,46 @@
+To activate the virtual env : fist go to en folder then type command: env\Scripts\activate (env:- virtual name)
+
+Folder structure
+ -main folder
+    -main folder name
+       -this folder contained all project files
+       -manage.py is server folder to run this file
+       -To run server :python manage.py runserver
+       
+Next go to main project folder in that go to settings.py folder
+
+Go to django.png image to understand django Request life cycle.
+
+Note when run first time we get this error: 
+                                           -You have 18 unapplied migration(s). Your project may not work properly until you apply the    migrations  for app(s): admin, auth, contenttypes, sessions. Run 'python manage.py migrate' to apply them.
+
+What is migrations
+  -It is blueprint for database model
+
+Database model means
+  - You want user table then you create user model 
+
+To migrate run this command
+   -python manage.py migrate
+   To change see db.sqlite3 file.
+   After this command user auth tables are created.
+   To see change got first.png file.
+
+All user empty to create first user use command
+  To create admin using below command
+  -python manage.py createsuperuser
+
+   Username (leave blank to use 'hemanth'): admin
+   Email address: 
+   Password: 
+   Password (again):
+   Superuser created successfully.
+   To change database go to second.png file
+
+To create a new app by using the command
+   -python manage.py startapp ebooks_app
+   New app is created 
+
+'ebooks_app' # Register our app in settings.py file in main folder using folder name
+
+Only one project and one or more apps.
