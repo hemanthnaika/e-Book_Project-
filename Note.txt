@@ -44,3 +44,8 @@ To create a new app by using the command
 'ebooks_app' # Register our app in settings.py file in main folder using folder name
 
 Only one project and one or more apps.
+
+
+----------------------------------------------------------------
+Day 2
+
