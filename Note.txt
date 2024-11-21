@@ -48,4 +48,17 @@ Only one project and one or more apps.
 
 ----------------------------------------------------------------
 Day 2
+Each Model as called as table
+One Row is called as one Model.
+Model is represent of row
+Note : Model name Should be in singular format. Example Book not Books.
+First create Model
+Then enter below command for create corresponding tables
+   -python manage.py  makemigrations
+In migration file it as blueprint of database.
 
+Next run below command
+   -python manage.py  migrate 
+It is used apply changes.
+
+Next Register in admin.py file new create a Model 
