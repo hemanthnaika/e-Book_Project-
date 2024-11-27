@@ -1,0 +1,32 @@
+{% extends 'master_page.html' %} {% load static %} {% block title %}eVeda | Author{% endblock %}{% block content %}
+<main class="container mx-auto px-4 py-8">
+    <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <img src="images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Author Profile" class="w-48 h-48 rounded-full object-cover shadow-lg">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Emma Richardson</h1>
+                <p class="text-xl text-gray-600 mb-4">Bestselling Author of Modern Fiction</p>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Follow Author</button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <h2 class="text-2xl font-bold mb-4">About the Author</h2>
+        <p class="text-gray-700 mb-4">Emma Richardson is an award-winning author known for her compelling narratives and deep character development. With over 15 years of writing experience, she has published numerous bestsellers and received multiple literary awards.</p>
+        <div class="bg-gray-100 p-4 rounded-lg mb-4">
+            <p class="italic text-gray-600">"Writing is not just about telling stories; it's about creating worlds where readers can find themselves."</p>
+        </div>
+        <button class="text-blue-600 hover:text-blue-800 transition">Read More →</button>
+    </section>
+    <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <h2 class="text-2xl font-bold mb-6">Books by Emma</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+
+            {% include 'components/card.html' %} {% include 'components/card.html' %} {% include 'components/card.html' %} {% include 'components/card.html' %} {% include 'components/card.html' %} {% include 'components/card.html' %} {% include 'components/card.html'
+            %} {% include 'components/card.html' %} {% include 'components/card.html' %} {% include 'components/card.html' %}
+        </div>
+    </section>
+
+
+</main>{% endblock %}

@@ -20,4 +20,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ebooks_app.urls')), #  Register our ebooks url here. It include all urls in ebooks apps folders
+    path("__reload__/", include("django_browser_reload.urls")),
 ]

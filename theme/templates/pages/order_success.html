@@ -1,0 +1,69 @@
+{% extends 'master_page.html' %} {% load static %} {% block title %}eVeda | Order Success{% endblock %}{% block content %}
+<main class="container mx-auto px-4 py-8 max-w-4xl">
+    <section class="bg-white rounded-lg shadow-lg p-8 mb-8 text-center">
+        <div class="text-green-500 mb-4">
+            <i class="fas fa-check-circle text-6xl"></i>
+        </div>
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Thank You for Your Purchase!</h1>
+        <p class="text-gray-600 mb-2">We've emailed your receipt and download link to john.doe@example.com</p>
+        <p class="text-gray-700 font-semibold">Order #EB78392</p>
+        <p class="text-gray-600">March 14, 2024</p>
+    </section>
+
+    <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Order Summary</h2>
+        <div class="space-y-6">
+            <div class="flex items-center gap-4 p-4 border rounded-lg">
+                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73" alt="Book Cover" class="w-20 h-28 object-cover rounded">
+                <div class="flex-1">
+                    <h3 class="font-semibold text-gray-800">The Art of Programming</h3>
+                    <p class="text-gray-600">By John Smith</p>
+                    <div class="flex items-center gap-2 mt-2">
+                        <span class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">PDF</span>
+                        <span class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">EPUB</span>
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Download Now</button>
+            </div>
+        </div>
+        <div class="mt-6 pt-6 border-t">
+            <div class="flex justify-between text-lg font-semibold">
+                <span>Total Paid:</span>
+                <span>$29.99</span>
+            </div>
+        </div>
+    </section>
+
+
+    <button class="bg-yellow-300 py-2 rounded-md font-heading px-3 mb-5">Continue Browsing</button>
+
+
+    <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Recommended Books</h2>
+        <div class="grid md:grid-cols-4 gap-4">
+            <div class="space-y-2">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f" alt="Recommended Book" class="w-full h-48 object-cover rounded">
+                <h3 class="font-semibold">Modern Development</h3>
+                <p class="text-gray-600 text-sm">$24.99</p>
+            </div>
+            <div class="space-y-2">
+                <img src="https://images.unsplash.com/photo-1576872381149-7847515ce5d8" alt="Recommended Book" class="w-full h-48 object-cover rounded">
+                <h3 class="font-semibold">Design Patterns</h3>
+                <p class="text-gray-600 text-sm">$19.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white rounded-lg shadow-lg p-8 ">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Need Help?</h2>
+            <p class="text-gray-600 mb-4">Contact our support team at support@ebooks.com</p>
+            <button class="bg-gray-600 text-white px-6 py-3 rounded hover:bg-gray-700 transition">Contact Support</button>
+        </div>
+    </section>
+
+</main>
+
+
+
+{% endblock %}

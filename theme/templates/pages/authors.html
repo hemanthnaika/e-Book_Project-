@@ -1,0 +1,95 @@
+{% extends 'master_page.html' %} {% load static %} {% block title %}eVeda | Authors{% endblock %}{% block content %}
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col md:flex-row gap-6">
+        <aside class="w-full md:w-64 space-y-6">
+            <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-semibold text-gray-900 mb-4">Filters</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Genre</label>
+                        <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            <option>All Genres</option>
+                            <option>Fiction</option>
+                            <option>Non-Fiction</option>
+                            <option>Mystery</option>
+                            <option>Romance</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Sort By</label>
+                        <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            <option>Most Popular</option>
+                            <option>Top Rated</option>
+                            <option>Newest</option>
+                            <option>A-Z</option>
+                            <option>Z-A</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Language</label>
+                        <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            <option>All Languages</option>
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="flex-1">
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Featured Authors</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Author" class="h-16 w-16 rounded-full object-cover">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Sarah Johnson</h3>
+                                <p class="text-sm text-gray-500">Bestselling Mystery Author</p>
+                                <div class="mt-2 flex items-center space-x-2">
+                                    <span class="text-sm text-gray-500">24 Books</span>
+                                    <button class="text-blue-600 hover:text-blue-700 text-sm font-medium">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">All Authors</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="Author" class="h-12 w-12 rounded-full object-cover">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">John Smith</h3>
+                                <p class="text-sm text-gray-500">Fiction Writer</p>
+                                <div class="mt-2 flex items-center space-x-2">
+                                    <span class="text-sm text-gray-500">12 Books</span>
+                                    <button class="text-blue-600 hover:text-blue-700 text-sm font-medium">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-center">
+                    <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
+                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            Previous
+                        </a>
+                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</a>
+                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">2</a>
+                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">3</a>
+                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            Next
+                        </a>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>{% endblock %}

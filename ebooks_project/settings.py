@@ -27,7 +27,8 @@ DEBUG = True  # If true It run in development mode and it give for error informa
 
 ALLOWED_HOSTS = [] # If Host this application on server then mention that server address in this list. It also said that our django project in which hosting services is running.
 
-
+# Add custom user permission Bellow code
+AUTH_USER_MODEL = 'ebooks_app.User'  # Replace 'ebooks_app' with the name of your app
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,9 +39,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Above are by default application.To show which are application installed. It is register we register our application in this block.
-    'ebooks_app' # Register our app
-] 
+   'tailwind',
+   'theme',
+   'django_browser_reload',
+   'ebooks_app' # Register our app
    
+] 
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = [
+    "127.0.0.1",
+    
+]
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 MIDDLEWARE = [
      # This middleware it make that how to send request from a to c in this b is middleware
@@ -51,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware', # It prevent cross site hijacking
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'ebooks_project.urls' # It is main enter point in application
